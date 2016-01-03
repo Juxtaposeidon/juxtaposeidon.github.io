@@ -15,3 +15,17 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+$(document).ready(function(){
+
+  $('li a').click(function(event){
+    event.preventDefault();
+    $.ajax({
+      method: "GET",
+      url: "website/" + $(this).attr('class')
+    })
+    .done(function(page){
+      $('#content').html(page['partial'])
+      console.log(page)
+    })
+  })
+})

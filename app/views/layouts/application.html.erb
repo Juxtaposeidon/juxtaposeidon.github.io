@@ -15,14 +15,15 @@
 
 <div class="navholder">
 <ul class="nav nav-pills nav-justified">
-  <li role="presentation"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Projects</a></li>
-  <li role="presentation"><a href="#">About</a></li>
-  <li role="presentation"><a href="#">Contact</a></li>
+  <li role="presentation"><%=link_to "Home", root_path, class: "main"%></li>
+  <li role="presentation"><%=link_to "Projects", website_projects_path, class: "projects"%></li>
+  <li role="presentation"><%=link_to "About", website_about_path, class: "about"%></li>
+  <li role="presentation"><%=link_to "Contact", website_contact_path, class: "contact"%></li>
 </ul>
 </div>
 </header>
+<div id="content">
 <%= yield %>
-
+</div>
 </body>
 </html>
