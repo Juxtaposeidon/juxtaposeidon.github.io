@@ -15,9 +15,39 @@ header{
 
 .icon{
   display:table-cell;
-  height:auto;
+  padding-left:20px;
+
 }
 .icon img{
   height:70px;
   width:auto;
+}
+
+.name{
+  font-size: 1.2em;
+  font-family: verdana;
+}
+
+.mainimage{
+  height:250px;
+  width:auto;
+  display:inline-block;
+  margin:0px;
+
+}
+
+#imagegrid{
+  margin-top:20px;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.placeholder{
+  height:250px;
+  width:250px;
+  display:inline-block;
+  margin:2.5px;
+  vertical-align:bottom;
 }
