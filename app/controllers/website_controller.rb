@@ -12,13 +12,11 @@ class WebsiteController < ApplicationController
   end
 
   def contact
-        render :json => {'thing' => "contact"}
-
+      render :json => {:partial => render_to_string(:partial => 'website/contact')}
   end
 
   def projects
-        render :json => {'thing' => "projects"}
-
+      render :json => {:partial => render_to_string(:partial => 'website/projects')}
   end
 
 end
