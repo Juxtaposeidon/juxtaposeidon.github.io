@@ -8,15 +8,15 @@ class WebsiteController < ApplicationController
   end
 
   def about
-      render :json => {:partial => render_to_string(:partial => 'website/about')}
+    render :json => {:partial => render_to_string(:partial => 'website/about')}
   end
 
   def contact
-      render :json => {:partial => render_to_string(:partial => 'website/contact')}
+    render :json => {:partial => render_to_string(:partial => 'website/contact')}
   end
 
   def projects
-      render :json => {:partial => render_to_string(:partial => 'website/projects')}
+    render :json => {:partial => render_to_string(:partial => 'website/projects')}
   end
 
 end
