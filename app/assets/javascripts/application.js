@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
 addOverlay = function(image){
   $("#overlay").width(image.css("width"));
   $("#overlay").height(image.css("height"));
@@ -33,17 +34,17 @@ $(document).ready(function(){
     $.ajax({
       method: "GET",
       url: "website/" + $(this).attr('class')
-    })
+    });
     .done(function(page){
-      $('#content').html(page['partial'])
-    })
-  })
+      $('#content').html(page['partial']);
+    });
+  });
 
   $('.mainimage').mouseenter(function(){
-    addOverlay($(this))
+    addOverlay($(this));
   });
 
   $('#overlay').mouseleave(function(){
     removeOverlay();
-  })
+  });
 })
