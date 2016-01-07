@@ -16,27 +16,15 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-addOverlay = function(image){
-  $("#overlay").width(image.css("width"));
-  $("#overlay").height(image.css("height"));
-  $("#overlay").css("top", image.offset().top + "px");
-  $("#overlay").css("left", image.offset().left + "px");
-}
-
-removeOverlay = function(){
-  $("#overlay").width(0);
-  $("#overlay").height(0);
-}
-
 $(document).ready(function(){
   $('li a').click(function(event){
     event.preventDefault();
     $.ajax({
       method: "GET",
       url: "website/" + $(this).attr('class')
-    });
+    })
     .done(function(page){
-      $('#content').html(page['partial']);
+      $('#content').html(page['partial'])
     });
   });
 
