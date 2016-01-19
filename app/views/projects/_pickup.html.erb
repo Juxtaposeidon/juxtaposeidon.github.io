@@ -2,10 +2,17 @@
 <div class="projectpagecontent">
   <%=image_tag('pickup.png', class: 'projectsshot')%>
   <div class="projectpagetext">
-    <h5>Pick Up</h5>
+    <h3>Pick Up</h3>
+    <span class = "projectlink"><%=link_to 'Github', "https://github.com/Juxtaposeidon/PickUp", :target => '_blank'%></span>
+    <span class = "projectlink"><%=link_to 'Heroku', "http://pickuptheapp.herokuapp.com/", :target => '_blank'%></span>
     <p>
-    Pick Up was my final project at DevBootcamp, in which I worked in a team to develop, test, and deploy the final product. It is an app that allows people to participate in on-the-go sporting activities, such as tennis, football, and basketball. Users can either host their own events or search for others to join.
+      <b>Problem:</b> Pick up sports, defined as on-the-go activities such as outdoor tennis and basketball, can be hard to organize. People are often busy with their lives and sometimes have to cancel their commitments. It's even harder to organize something when you move to a new city where you don't know anyone and need help finding games.
     </p>
+    <p>
+      Pick Up was my final project at DevBootcamp, in which I worked in a team to develop, test, and deploy the final product. The app allows people to search for nearby pick up activities and host their own for others to join. Users can both filter and search for events through a number of different criteria, and the program handles all RSVPs and email notifications.
+    </p>
+    <p>
+      Pick Up was built in Rails and Javascript and features integrations with Google Maps API, Geocoder, and OAuth.
     <p>
       <%=link_to "Back", root_path, class: "back"%>
     </p>
