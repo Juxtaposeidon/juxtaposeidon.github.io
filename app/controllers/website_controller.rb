@@ -16,7 +16,7 @@ class WebsiteController < ApplicationController
   end
 
   def projects
-    render :json => {:partial => render_to_string(:partial => 'website/projects')}
+    render :json => {:partial => render_to_string(:partial => 'projects/index')}
   end
 
 end

@@ -1,6 +1,6 @@
 .project{
   margin: 5px;
-  border: 2px solid gray;
+  border: 1px solid gray;
 }
 
 #projects{
@@ -13,4 +13,8 @@
   color: white;
   text-align:center;
   line-height: 140px;
+}
+
+#overlay .imagelabel:hover{
+  cursor: pointer;
 }

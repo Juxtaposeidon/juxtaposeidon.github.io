@@ -16,7 +16,18 @@ $(document).ready(function(){
   $('.project').mouseenter(function(){
     addOverlay($(this));
   });
+
   $('#overlay').mouseleave(function(){
     removeOverlay();
   });
+
+  $('#overlay').click(function(){
+    $.ajax({
+      data: {key: $(this).text()},
+      url: '/website/projects/show'
+    })
+    .done(function(result){
+      $('#content').html(result['partial'])
+    })
+  })
 })
