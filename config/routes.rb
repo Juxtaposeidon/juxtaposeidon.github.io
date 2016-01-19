@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get 'website/projects' => 'website#projects'
   get 'website/contact' => 'website#contact'
   get 'website/index' => 'website#index'
-  get 'website/projects/index' => 'projects#index'
   get 'website/projects/show' => 'projects#show'
 
   # Example of regular route:
