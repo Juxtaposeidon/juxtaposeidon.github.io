@@ -4,10 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'website#index'
-  get 'website/projects' => 'website#projects'
   get 'website/about' => 'website#about'
+  get 'website/projects' => 'website#projects'
   get 'website/contact' => 'website#contact'
   get 'website/index' => 'website#index'
+  get 'website/projects/show' => 'projects#show'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

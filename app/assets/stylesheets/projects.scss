@@ -1,17 +1,37 @@
 .project{
-height:auto;
-width:50%;
-margin:10px;
+  margin: 5px;
+  border: 1px solid gray;
 }
 
-#projectbox{
+#projects{
   text-align:center;
 }
 
-.projectdesc{
-  border: 1px black solid;
-  width: 60%;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:30px;
+.imagelabel{
+  font-size:30px;
+  color: white;
+  text-align:center;
+  line-height: 140px;
+}
+
+#overlay .imagelabel:hover{
+  cursor: pointer;
+}
+
+.projectsshot{
+  float:right;
+  height:55%;
+  width:55%;
+  margin: 5px;
+}
+
+.projectpagecontent{
+  margin-top:10px;
+}
+
+.projectpagetext{
+  float:left;
+  width:40%;
+  margin:5px;
+  text-align:center;
 }
