@@ -1,7 +1,13 @@
+<%= javascript_include_tag 'projects/projectpage.js'%>
 <div class="projectpagecontent">
   <%=image_tag('mtgdrafter.png', class: 'projectsshot')%>
   <div class="projectpagetext">
     <h5>Magic the Gathering: Battle for Zendikar Limited Simulator</h5>
+    <p>
     As someone who loves Magic: the Gathering, I wanted to build something that would help me study and improve my game. I decided to build a Magic limited simulator for the Battle for Zendikar expansion, which allows me and others to practice picking cards in the sealed and draft game formats. I consider this a work in progress because I could spend a lot more time in developing how the "AI" chooses its cards, but the product exists in a working form!
+    </p>
+    <p>
+      <%=link_to "Back", root_path, class: "back"%>
+    </p>
   </div>
 </div>
