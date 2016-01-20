@@ -2,9 +2,11 @@
 <div class="projectpagecontent">
   <%=image_tag('sfart.png', class: 'projectsshot')%>
   <div class="projectpagetext">
-    <h3>SF Open Art</h3>
-    <span class = "projectlink"><%=link_to 'Github', "https://github.com/Juxtaposeidon/SF-Open-Art", :target => '_blank'%></span>
-    <span class = "projectlink"><%=link_to 'Heroku', "http://sfopenart.herokuapp.com/", :target => '_blank'%></span>
+    <div class="projectheader">
+      <h3>SF Open Art</h3>
+      <span class = "projectlink"><%=link_to 'Github', "https://github.com/Juxtaposeidon/SF-Open-Art", :target => '_blank'%></span>
+      <span class = "projectlink"><%=link_to 'Heroku', "http://sfopenart.herokuapp.com/", :target => '_blank'%></span>
+    </div>
     <p>
       <b>Problem:</b> Despite being the world's tech capital, San Francisco could definitely update its online infrastructure for its civic organizations. It's why groups like Code for America and DataKind exist. While going through the City's online resources for civic art, I found inaccurate and outdated websites. I wanted to build something that would make civic artwork data more accessible.
     </p>
