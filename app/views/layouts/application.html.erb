@@ -19,13 +19,15 @@
 <ul class="nav nav-pills nav-justified">
   <li role="presentation"><%=link_to "Home", root_path, class: "index"%></li>
   <li role="presentation"><%=link_to "Projects", website_projects_path, class: "projects"%></li>
-  <li role="presentation"><%=link_to "About", website_about_path, class: "about"%></li>
-  <li role="presentation"><%=link_to "Contact", website_contact_path, class: "contact"%></li>
+  <li role="presentation"><%=link_to "Resume", "resume"%></li>
+  <li role="presentation"><%=link_to image_tag('github.png', class: 'contactimg'), 'http://www.github.com/juxtaposeidon', :target => '_blank'%></li>
+  <li role="presentation"><%=link_to image_tag('linkedin.png', class: 'contactimg'), 'http://www.linkedin.com/in/justinckyee', :target => '_blank'%></li>
+  <li role="presentation"><%=link_to image_tag('email.png', class: 'contactimg'), 'mailto:jy243@cornell.edu', :target => '_blank' %></li>
 </ul>
 </div>
 </header>
 <div id="content">
-<%= yield %>
+  <%= yield %>
 </div>
 </body>
 </html>
