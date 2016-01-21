@@ -1,38 +1,31 @@
 .project{
   margin: 5px;
   border: 1px solid gray;
+  width:100%;
 }
 
-#projects{
-  text-align:center;
+#projectbanners{
+  width:55%;
+  float:left;
+  margin-top:15px;
+}
+
+#projecttext{
+  float:right;
+  width:40%;
+  margin-right:10px;
 }
 
 .imagelabel{
-  font-size:30px;
+  font-family: "Open Sans";
+  font-size:2vw;
   color: white;
   text-align:center;
-  line-height: 140px;
+  line-height: 3em;
 }
 
 #overlay .imagelabel:hover{
   cursor: pointer;
-}
-
-.projectsshot{
-  float:right;
-  height:55%;
-  width:55%;
-  margin: 5px;
-}
-
-.projectpagecontent{
-  margin-top:10px;
-}
-
-.projectpagetext{
-  float:left;
-  width:40%;
-  margin:5px;
 }
 
 .projectlink{
@@ -41,4 +34,12 @@
 
 .projectheader{
   text-align:center;
+}
+
+.projectheader a{
+  font-size: 1.15vw;
+}
+
+p{
+  font-size: 1vw;
 }

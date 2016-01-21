@@ -17,7 +17,7 @@
 //= require_directory .
 
 $(document).ready(function(){
-  $('li a').click(function(event){
+  $('.projects, .index').click(function(event){
     event.preventDefault();
     $.ajax({
       method: "GET",

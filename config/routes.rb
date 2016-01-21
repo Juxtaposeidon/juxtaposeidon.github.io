@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'website/contact' => 'website#contact'
   get 'website/index' => 'website#index'
   get 'website/projects/show' => 'projects#show'
-
+  get 'website/download' => 'website#download'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
