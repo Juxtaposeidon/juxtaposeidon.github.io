@@ -1,17 +1,25 @@
 .project{
   margin: 5px;
   border: 1px solid gray;
+  width:100%;
 }
 
-#projects{
-  text-align:center;
+#projectbanners{
+  width:55%;
+  float:left;
+}
+
+#projecttext{
+  float:right;
+  width:40%;
 }
 
 .imagelabel{
-  font-size:30px;
+  font-family: "Open Sans";
+  font-size:2vw;
   color: white;
   text-align:center;
-  line-height: 140px;
+  line-height: 3em;
 }
 
 #overlay .imagelabel:hover{
