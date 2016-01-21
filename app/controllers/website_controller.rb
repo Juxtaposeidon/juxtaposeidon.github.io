@@ -20,7 +20,7 @@ class WebsiteController < ApplicationController
   end
 
   def download
-    send_file "#{Rails.root}/public/assets/JustinYeeResume.pdf", :type=>"application/pdf", :x_sendfile=>true
+    send_file "#{Rails.root}/public/assets/ResumeJustinYee.pdf", :type=>"application/pdf", :x_sendfile=>true
   end
 
 end
