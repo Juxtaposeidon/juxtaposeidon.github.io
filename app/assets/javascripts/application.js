@@ -28,11 +28,4 @@ $(document).ready(function(){
     });
   });
 
-  $('.mainimage').mouseenter(function(){
-    addOverlay($(this));
-  });
-
-  $('#overlay').mouseleave(function(){
-    removeOverlay();
-  });
 })
