@@ -27,7 +27,7 @@ $(document).ready(function(){
       url: '/website/projects/show'
     })
     .done(function(result){
-      $('#content').html(result['partial'])
+      $('#projecttext').html(result['partial'])
     })
   })
 })

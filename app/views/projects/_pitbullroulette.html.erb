@@ -1,23 +1,14 @@
-<%= javascript_include_tag 'projects/projectpage.js'%>
-<div class="projectpagecontent">
-  <%=image_tag('pitbull.png', class: 'projectsshot')%>
-  <div class="projectpagetext">
-    <div class="projectheader">
-      <h3>Pitbull Roulette</h3>
-      <span class = "projectlink"><%=link_to 'Github', "https://github.com/Juxtaposeidon/pitroul", :target => '_blank'%></span>
-      <span class = "projectlink"><%=link_to 'Heroku', "http://pitbullroulette.herokuapp.com/", :target => '_blank'%></span>
-    </div>
-    <p>
-     <b>Concept:</b> "Hey, Justin, you like Pitbull. Why don't you build a Pitbull app?"
-    </p>
-    <p>
-      Someone challenged me to built a Pitbull-related app, and I responded with this nifty item. The purpose of the app is to generate random Pitbull content. The app works through the YouTube API to deliver a neverending aural and visual Pitbull experience. Users can also pull up a random Pitbull song with the help of the SoundCloud API. Lastly, the Giphy API is there to showcase the rapper (and some dogs) in animated image form. This project mainly helped me explore tinkering with APIs, to mixed success.
-    </p>
-    <p>
-      The main issues I ran into during development for this app involved API-related limitations. While I can program the YouTube API to perform a search for Pitbull, I can receive only 500 results max, which is a drop in the bucket compared to the 200,000+ videos out there. With the SoundCloud API, I ran into some trouble integrating continuous Pitbull looping, which is something I'm still looking into. Lastly, the Giphy API is still in beta, so its searching service still leaves much to be desired.
-    </p>
-    <p>
-      <%=link_to "Back", root_path, class: "back"%>
-    </p>
-  </div>
+<div class="projectheader">
+  <h3>Pitbull Roulette</h3>
+  <span class = "projectlink"><%=link_to 'Github', "https://github.com/Juxtaposeidon/pitroul", :target => '_blank'%></span>
+  <span class = "projectlink"><%=link_to 'Heroku', "http://pitbullroulette.herokuapp.com/", :target => '_blank'%></span>
 </div>
+<p>
+ <b>Concept:</b> "Hey, Justin, you like Pitbull. Why don't you build a Pitbull app?"
+</p>
+<p>
+  Someone challenged me to built a Pitbull-related app, and I responded with this nifty item. The purpose of the app is to generate random Pitbull content. The app works through the YouTube API to deliver a neverending aural and visual Pitbull experience. Users can also pull up a random Pitbull song with the help of the SoundCloud API. Lastly, the Giphy API is there to showcase the rapper (and some dogs) in animated image form. This project mainly helped me explore tinkering with APIs, to mixed success.
+</p>
+<p>
+  The main issues I ran into during development for this app involved API-related limitations. While I can program the YouTube API to perform a search for Pitbull, I can receive only 500 results max, which is a drop in the bucket compared to the 200,000+ videos out there. With the SoundCloud API, I ran into some trouble integrating continuous Pitbull looping, which is something I'm still looking into. Lastly, the Giphy API is still in beta, so its searching service still leaves much to be desired.
+</p>
