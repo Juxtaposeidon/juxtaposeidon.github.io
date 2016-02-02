@@ -17,7 +17,7 @@
 //= require_directory .
 
 $(document).ready(function(){
-  $('.projects, .index').click(function(event){
+  $('.projects, .index, .resume').click(function(event){
     event.preventDefault();
     $.ajax({
       method: "GET",
