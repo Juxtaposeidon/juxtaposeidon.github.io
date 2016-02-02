@@ -12,8 +12,7 @@ class WebsiteController < ApplicationController
   end
 
   def resume
-    render :json => {:partial => render_to_string(:partial => 'projects/index')}
-    send_file "#{Rails.root}/public/assets/ResumeJustinYee.pdf", :type=>"application/pdf", :x_sendfile=>true
+    render :json => {:partial => render_to_string(:partial => 'website/resume')}
   end
 
 end
